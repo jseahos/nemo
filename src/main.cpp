@@ -15,13 +15,13 @@ int main(int argc, char* argv[])
 {
     if (argc < 2) {
         std::cerr << "usage: nemo <file>" << std::endl;
-        return -1;
+        return 1;
     }
 
     std::optional<std::string> commands = read_commands(argv[1]);
     if (!commands.has_value()) {
         std::cerr << "nemo: error: failed to open '" << argv[1] << "'" << std::endl;
-        return -1;
+        return 1;
     }
 
     execute_commands(commands.value());
