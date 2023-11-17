@@ -23,7 +23,7 @@ nemo defines its accumulator as a byte, parallel to a single cell in Brainfuck.
 ### Installing
 
 1. Run ```$ make all``` to build nemo.
-2. Add the created `bin` directory to your `PATH`.
+2. Add the created `bin/` directory to your `PATH`.
 
 ## Authors
 
