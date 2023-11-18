@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    std::optional<std::string> commands = read_commands(argv[1]);
+    auto commands = read_commands(argv[1]);
     if (!commands.has_value()) {
         std::cerr << "nemo: error: failed to open '" << argv[1] << "'" << std::endl;
         return 1;
